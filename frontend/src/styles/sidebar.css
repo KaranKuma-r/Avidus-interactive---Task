@@ -1,0 +1,39 @@
+.sidebar {
+  width: 220px;
+
+  min-height: 100vh;
+
+  background: #1f2937;
+
+  color: white;
+
+  padding: 20px;
+}
+
+.sidebar-links {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.sidebar-links a {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+
+    min-height: auto;
+  }
+
+  .sidebar-links {
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+}
