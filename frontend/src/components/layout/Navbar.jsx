@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import "../../styles/navbar.css";
 
@@ -8,7 +8,7 @@ import { logout } from "../../redux/authSlice";
 
 const Navbar = () => {
   const dispatch = useDispatch();
-
+  const navigate = useNavigate()
   const user = JSON.parse(
     localStorage.getItem("user")
   );
@@ -17,7 +17,7 @@ const Navbar = () => {
   try {
     await dispatch(logout());
 
-    window.location.href = "/login";
+    navigate("/login");
   } catch (error) {
     console.log(error);
   }
