@@ -168,9 +168,7 @@ MONGO_URI=your_mongodb_url
 JWT_SECRET=your_secret_key
   </pre>
 
-  <p>
-    Admin credentials are protected for security reasons.
-  </p>
+ 
 
   <hr />
 
