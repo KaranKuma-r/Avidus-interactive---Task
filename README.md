@@ -19,8 +19,8 @@
 
   <p>
     Live URL:
-    <a href="https://avidus-interactive-task.vercel.app/login" target="_blank">
-      https://avidus-interactive-task.vercel.app/login
+    <a href="https://avidus-interactive-task.vercel.app/" target="_blank">
+      https://avidus-interactive-task.vercel.app/
     </a>
   </p>
 
