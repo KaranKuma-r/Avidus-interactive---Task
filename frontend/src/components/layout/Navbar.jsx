@@ -13,12 +13,15 @@ const Navbar = () => {
     localStorage.getItem("user")
   );
 
-  const handleLogout = () => {
-    dispatch(logout());
+ const handleLogout = async () => {
+  try {
+    await dispatch(logout());
 
-    window.location.href =
-      "/login";
-  };
+    window.location.href = "/login";
+  } catch (error) {
+    console.log(error);
+  }
+};
 
   return (
     <nav className="navbar">
